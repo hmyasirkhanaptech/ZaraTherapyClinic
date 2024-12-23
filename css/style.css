@@ -1,0 +1,267 @@
+        /* Upper Navbar Styling */
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .navbar .navbar-brand {
+            color: white;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+        }
+
+        /* Bottom Navbar Styling */
+        .bottom-navbar {
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+        }
+
+        .bottom-navbar .nav-link {
+            color: #007bff;
+        }
+
+        /* Flex container to align image and form side by side */
+        /* .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+
+        /* Styling for the image */
+        .image-container img {
+            width: 100%;
+            max-width: 500px;  /* You can adjust this */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Styling for the login form */
+        .form-container {
+            width: 400px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            /* margin-left: 300px; */
+            display: none; /* Initially hide the login form */
+            position: absolute;  /* Center the form */
+            top: 50%;
+            left: 50%;
+            /* right: 180; */
+            transform: translate(-50%, -50%);
+        }
+
+        /* Close button style */
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 20px;
+            color: rgb(26, 15, 15);
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container .form-control {
+            margin-bottom: 15px;
+        }
+
+        .form-container .btn {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .form-container .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Right-align email and password fields */
+        .form-container .input-group {
+            margin-top: 15px;
+        }
+
+        .form-container .input-group input {
+            margin-left: auto;  /* Align inputs to the right */
+        }
+
+        /* Ensure the container layout adjusts for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .form-container {
+                margin-left: 0;
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+
+
+        /* ////////////////// */
+
+        /* General styling */
+#intro-clinic {
+    background-color: #f4f4f9;
+    padding: 40px 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    
+  }
+  
+  #intro-clinic .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    bottom: 50%;
+  }
+  
+  #intro-clinic h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #intro-clinic p {
+    font-size: 18px;
+    /* line-height: 1.6; */
+    color: #555;
+    text-align: justify;
+    /* margin-bottom: 20px; */
+    bottom: 100px;
+  }
+  
+  .mission {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  .mission h3 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .mission p {
+    font-size: 18px;
+    color: #555;
+    text-align: justify;
+    bottom: 50%;
+  }
+  
+  @media (max-width: 768px) {
+    #intro-clinic h2 {
+      font-size: 28px;
+    }
+    
+    #intro-clinic p {
+      font-size: 16px;
+      bottom: 50%;
+    }
+    
+    .mission h3 {
+      font-size: 22px;
+    }
+  }
+  .cardhover{
+    transition: all 0.1s ease-in-out;
+  }
+  .cardhover:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  /* Footer Styles */
+.footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ecf0f1;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.social-links a:hover {
+  color: #3498db;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #34495e;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-section {
+      text-align: center;
+      margin: 15px 0;
+  }
+}
+h2{
+  text-align: center;
+  font-size: 50px;
+  font-family: forte;
+  margin-top: 30px;
+}
+
